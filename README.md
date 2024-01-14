@@ -20,7 +20,7 @@ CSS3: To style and bring the tropical aesthetic to life.
 JavaScript: For implementing game logic, interactive features, and ensuring a dynamic user experience.
 
 # Installation
-No installation required! Tropical Chess is accessible directly through your web browser. Just navigate to [Tropical Chess URL] and start playing.
+No installation required! Tropical Chess is accessible directly through your web browser. Just navigate to https://zetro2.github.io/Tropical-Chess/ and start playing.
 
 # Contributing
 Contributions to Tropical Chess are always welcome, whether it's improving code, design, or adding new features. If you're interested in contributing, please contact me through email: lchan3201@gmail.com
