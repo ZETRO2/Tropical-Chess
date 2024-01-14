@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "tropical";
+  src: url('./hpunk.ttf');
+}
+
+html {
+  text-align: center;
+  font-family: 'tropical';
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-weight: 900;
+  font-size: 40pt;
+  background-image: url('https://img.freepik.com/free-vector/tropical-background-with-toucan-exotic-leaves_1361-1497.jpg?w=2000');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px -6px 0 #212121,
+    0px -6px 0 #212121,
+    0px 6px 0 #212121,
+    0px 6px 0 #212121,
+    -6px 0px 0 #212121,
+    6px 0px 0 #212121,
+    -6px 0px 0 #212121,
+    6px 0px 0 #212121,
+    -6px -6px 0 #212121,
+    6px -6px 0 #212121,
+    -6px 6px 0 #212121,
+    6px 6px 0 #212121,
+    -6px 18px 0 #212121,
+    0px 18px 0 #212121,
+    6px 18px 0 #212121,
+    0 19px 1px rgba(0, 0, 0, .1),
+    0 0 6px rgba(0, 0, 0, .1),
+    0 6px 3px rgba(0, 0, 0, .3),
+    0 12px 6px rgba(0, 0, 0, .2),
+    0 18px 18px rgba(0, 0, 0, .25),
+    0 24px 24px rgba(0, 0, 0, .2),
+    0 36px 36px rgba(0, 0, 0, .15);
+}
+
+#gameboard {
+  margin: auto;
+  width: 640px;
+  height: 640px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.square svg {
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  position: relative;
+  z-index: -9;
+}
+
+path {
+  position: relative;
+  z-index: -10;
+}
+
+.piece {
+  position: relative;
+  z-index: 9;
+}
+
+.lightbrown {
+  background-color: #cf514a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-shadow: 0px -6px 0 #212121,
+    0px -6px 0 #212121,
+    0px 6px 0 #212121,
+    0px 6px 0 #212121,
+    -6px 0px 0 #212121,
+    6px 0px 0 #212121,
+    -6px 0px 0 #212121,
+    6px 0px 0 #212121,
+    -6px -6px 0 #212121,
+    6px -6px 0 #212121,
+    -6px 6px 0 #212121,
+    6px 6px 0 #212121,
+    -6px 18px 0 #212121,
+    0px 18px 0 #212121,
+    6px 18px 0 #212121,
+    0 19px 1px rgba(0, 0, 0, .1),
+    0 0 6px rgba(0, 0, 0, .1),
+    0 6px 3px rgba(0, 0, 0, .3),
+    0 12px 6px rgba(0, 0, 0, .2),
+    0 18px 18px rgba(0, 0, 0, .25),
+    0 24px 24px rgba(0, 0, 0, .2),
+    0 36px 36px rgba(0, 0, 0, .15);
+}
+
+.brown {
+  background-color: #0d7760;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-shadow: 0px -6px 0 #212121,
+    0px -6px 0 #212121,
+    0px 6px 0 #212121,
+    0px 6px 0 #212121,
+    -6px 0px 0 #212121,
+    6px 0px 0 #212121,
+    -6px 0px 0 #212121,
+    6px 0px 0 #212121,
+    -6px -6px 0 #212121,
+    6px -6px 0 #212121,
+    -6px 6px 0 #212121,
+    6px 6px 0 #212121,
+    -6px 18px 0 #212121,
+    0px 18px 0 #212121,
+    6px 18px 0 #212121,
+    0 19px 1px rgba(0, 0, 0, .1),
+    0 0 6px rgba(0, 0, 0, .1),
+    0 6px 3px rgba(0, 0, 0, .3),
+    0 12px 6px rgba(0, 0, 0, .2),
+    0 18px 18px rgba(0, 0, 0, .25),
+    0 24px 24px rgba(0, 0, 0, .2),
+    0 36px 36px rgba(0, 0, 0, .15);
+}
+
+.black {
+  fill: #0a3727;
+}
+
+.white {
+  fill: #f4f2e7;
+}
+
+h1 {
+  font-family: 'tropical';
+  font-size: 70px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px -6px 0 #212121,
+    0px -6px 0 #212121,
+    0px 6px 0 #212121,
+    0px 6px 0 #212121,
+    -6px 0px 0 #212121,
+    6px 0px 0 #212121,
+    -6px 0px 0 #212121,
+    6px 0px 0 #212121,
+    -6px -6px 0 #212121,
+    6px -6px 0 #212121,
+    -6px 6px 0 #212121,
+    6px 6px 0 #212121,
+    -6px 18px 0 #212121,
+    0px 18px 0 #212121,
+    6px 18px 0 #212121,
+    0 19px 1px rgba(0, 0, 0, .1),
+    0 0 6px rgba(0, 0, 0, .1),
+    0 6px 3px rgba(0, 0, 0, .3),
+    0 12px 6px rgba(0, 0, 0, .2),
+    0 18px 18px rgba(0, 0, 0, .25),
+    0 24px 24px rgba(0, 0, 0, .2),
+    0 36px 36px rgba(0, 0, 0, .15);
+}
